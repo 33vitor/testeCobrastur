@@ -5,16 +5,17 @@
   border: 1px solid #eee;
   display: block;
   width: 100%;
+  min-width: 16rem;
   font-size: 1rem;
   padding: 0.8rem;
   border-radius: 0.4rem;
-  background: #eee;
+  background: rgb(232, 232, 232);
   transition: 0.1;
 }
 .input:focus, .input:hover{
   outline: none;
   border-color: #08436F;
-  background: white;
+  background: rgb(235, 235, 235);
   box-shadow: 0 0 0 2px #095188;
 }
 .label{

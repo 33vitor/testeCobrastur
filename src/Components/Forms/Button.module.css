@@ -9,7 +9,8 @@
   padding: 0.8rem 1.2rem;
   box-sizing: border-box;
   transition: 0.1s;
-  min-width: 8rem;
+  min-width: 16rem;
+  width: 100%;
 }
 .button:hover, .button:focus{
   outline: none;

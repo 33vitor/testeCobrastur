@@ -12,3 +12,13 @@ export function TOKEN_POST(body){
     }
   }
 };
+
+export function GET_LIST({page}){
+  return{
+    url: API_URL + `users?page=${page}`,
+    options: {
+      method: 'GET',
+      cache:'no-store'
+    },
+};
+}

@@ -1,0 +1,58 @@
+.container{
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: animeLeft 0.6s forwards;
+  }
+  @keyframes container{
+    to{
+      opacity: 1;
+      transform:initial;
+    }
+  }
+.title{
+  color: #08436F;
+  margin-top: 10px;
+}
+
+.boxTitle{
+  display: flex;
+  text-align:center;
+
+}
+
+.iconTitle{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.pages{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.btnPages{
+  border-radius: 0.2rem;
+  border-color: #08436F;
+  color: #08436F;
+  margin-left: 0.5rem;
+}
+.btnPages:hover, .btnPages:focus{
+  outline: none;
+  background-color: #08436F;
+  color: azure;
+}
+p{
+  float: left;
+}
+.focus{
+  outline: none;
+  background-color: #08436F;
+  color: azure;
+}
+.origin{
+  border-radius: 0.2rem;
+  border-color: #08436F;
+  color: #08436F;
+  margin-left: 0.5rem;
+}
