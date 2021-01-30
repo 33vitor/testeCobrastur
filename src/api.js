@@ -22,3 +22,15 @@ export function GET_LIST({page}){
     },
 };
 }
+export function CLIENT_POST(body){
+  return{
+    url: API_URL + 'users',
+    options:{
+      method: 'POST',
+        headers:{
+          'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify(body)
+    }
+  }
+};

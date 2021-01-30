@@ -51,7 +51,9 @@ import styles from './LoginForm.module.css'
           <img src={logoLogin} className={styles.logo}/>
           <form onSubmit={handleSubmit} className={styles.form}>
             <Input name="email "label="Email" type="email" {...email}/>
+            <br/>
             <Input name="password" label="Senha" type="password" {...password}/>
+            <br/>
 
             {loading ? 
             <Button disabled>Carregando...</Button>

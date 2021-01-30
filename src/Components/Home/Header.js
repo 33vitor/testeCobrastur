@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css'
 import { Link } from 'react-router-dom';
-import Logo from '../Assets/logoHeader.png';
+import Logo from '../../Assets/logoHeader.png';
 
 
 
@@ -16,7 +16,12 @@ const Header = () => {
         <Link className={styles.logo} to="/" aria-label="Home">
           <img src={Logo} alt="Logo"/>
         </Link>
-        <Link onClick={handleClick} className={styles.login} to="/Login">Sair</Link>
+        <div className={styles.divAdd}>
+          <Link className={styles.btnLink} to="/addClient" aria-label="New Client">
+            <button className={styles.btn}><strong>+</strong> Novo Cliente</button>
+          </Link>
+          <Link onClick={handleClick} className={styles.login} to="/Login">Sair</Link>
+        </div>
       </nav>
     </header>
   )

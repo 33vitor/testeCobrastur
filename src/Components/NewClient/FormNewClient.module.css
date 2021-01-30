@@ -1,0 +1,33 @@
+.container{
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: animeLeft 0.6s forwards;
+  }
+  @keyframes container{
+    to{
+      opacity: 1;
+      transform:initial;
+    }
+  }
+.title{
+  color: #08436F;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.boxTitle{
+  display: flex;
+  text-align:center;
+
+}
+
+.iconTitle{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.pTitle{
+  padding-bottom: 1.5rem;
+}
+.listButtons{
+  margin-bottom: 1rem;
+}

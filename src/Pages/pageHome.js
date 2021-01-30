@@ -1,8 +1,6 @@
 import React from 'react';
-import Header from '../Components/Header';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Home from  '../Home/Home';
-import Login from  '../Components/Login/Login';
+import Header from '../Components/Home/Header';
+import Home from  '../Components/Home/Home';
 import {Redirect} from 'react-router-dom';
 
 const pageHome = () => {

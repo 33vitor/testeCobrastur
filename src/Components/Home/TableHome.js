@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import {GET_LIST} from '../api';
-import useFetch from '../Hooks/useFetch';
-import Error from '../Components/Helper/Error';
-import Loading from '../Components/Helper/Loading';
+import {GET_LIST} from '../../api';
+import useFetch from '../../Hooks/useFetch';
+import Error from '../Helper/Error';
+import Loading from '../Helper/Loading';
 import CellTableHome from './CellTableHome';
 import styles from './TableHome.module.css';
-import icon from '../Assets/client.svg';
+import icon from '../../Assets/client.svg'
 
 const TableHome = ({page}) => {
   const {data, loading, error, request} = useFetch();
@@ -15,7 +15,6 @@ const TableHome = ({page}) => {
     async function getList(){
       const {url, options} = GET_LIST({page});
       const {response, json} = await request(url, options);
-      console.log(json);
     }
     getList();
   }, [request, page])
@@ -23,7 +22,6 @@ const TableHome = ({page}) => {
   if(loading) return <Loading />
   if(data){
   let info = data.data;
-  console.log(info);
   return (
     <section className="animeLeft">
       <div className={styles.boxTitle}>
